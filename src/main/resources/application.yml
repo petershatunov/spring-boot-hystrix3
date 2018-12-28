@@ -1,0 +1,17 @@
+
+
+server.port: 8083
+
+spring:
+  zipkin:
+    baseUrl:  http://localhost:9411
+  application:
+    name: Hystrix_test_service3
+
+fourth-service:
+  ribbon:
+    listOfServers: http://localhost:8084/
+
+feign:
+  hystrix:
+    enabled: false
